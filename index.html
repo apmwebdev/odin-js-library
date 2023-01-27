@@ -3,10 +3,32 @@
   <head>
     <meta charset="UTF-8">
     <title>Library</title>
-    <script src="library.js"></script>
+    <script defer src="library.js"></script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-  
+    <h1>Books</h1>
+    <h2>Library:</h2>
+    <div id="books"></div>
+    <h2>New Book:</h2>
+    <div class="form-notices"></div>
+    <form id="new-book" method="post">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" required>
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author" required>
+        <label for="length-in-pages">Length (in pages):</label>
+        <input type="text" name="length-in-pages" id="length-in-pages" required>
+      <div class="form-control">
+        <label for="have-read-false">Haven't read</label>
+        <input type="radio" name="have-read" id="have-read-false" value="false">
+      </div>
+      <div class="form-control">
+        <label for="have-read-true">Have read</label>
+        <input type="radio" name="have-read" id="have-read-true" value="true">
+      </div>
+      <button type="submit" id="submit">Submit</button>
+      <button type="reset" id="reset">Reset</button>
+    </form>
   </body>
 </html>

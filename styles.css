@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+
+#new-book {
+    display: grid;
+    width: 30rem;
+    grid-template-columns: 1fr 2fr;
+}
